@@ -1,4 +1,10 @@
 terraform {
+  cloud {
+    organization = "kylemeds_org_ph"
+    workspaces {
+      name = "workspace-kyle"
+    }
+  }
   required_providers {
     aws = {
       source  = "hashicorp/aws"
